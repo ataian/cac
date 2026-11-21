@@ -1,0 +1,81 @@
+{
+  "package_version": "1.0.0",
+  "cac": {
+    "repository": "https://github.com/ataian/generic-devteam",
+    "repository_revision": "953f6dd5b7bf21e96676dccc13ebfcde39e95416",
+    "source_state": "clean checkout at repository_revision",
+    "last_source_change_revision": "b589e4afcd21644f3defeb3831fb4bd672a3ee11",
+    "source_files": [
+      {
+        "source_path": "docs/cac/CAC-HERMES.md",
+        "source_sha256": "eda315e8470584e23cdea6b813ebca003ac8cddfb4d6ee6aa34b3d5a32a3f19c",
+        "local_path": "references/cac-notation.md",
+        "packaged_sha256": "56f1cf9a5dbefd5a7e076b1f5fd4166b0113d46cab7082657f7cffc9da080f05",
+        "adaptations": [
+          "Replace the source title with a reference heading.",
+          "Rewrite the purpose and scope paragraphs so the text addresses a package reader; keep the writing-only scope and the statement that CAC replaces TAS and Caveman as a writing convention.",
+          "Add a visible provenance notice with the source path and an inventory pointer.",
+          "Add the role-scoped audience bullet in section 5: only the role that owns the human contact writes in that language; roles that never address the human audience write technical English to each other.",
+          "Escape the pipe inside the one-line message table cell so the notation table keeps three columns."
+        ]
+      },
+      {
+        "source_path": "docs/cac/CAC-CODEX.md",
+        "source_sha256": "a3779665e64636d00659578a33b97ed01c768186bafe8b5b692b0454f60da711",
+        "local_path": "references/cac-codex.md",
+        "packaged_sha256": "6b731c82cb7cf2aae509978597cdc954040fa585a87d4d05cc12f1a4d197c374",
+        "adaptations": [
+          "Replace the source title with a reference heading.",
+          "Rewrite the purpose and scope paragraphs for a package reader; keep the writing-only scope and the Codex context.",
+          "Add a visible provenance notice with the source path and an inventory pointer.",
+          "Keep rules, table, examples, message shapes, and boundaries unchanged."
+        ]
+      },
+      {
+        "source_path": "references/cac-authoring.md",
+        "source_sha256": "ac8628b5bef145abcedd533c52e9bb3c94b684defae45496fb3f86a94ef56065",
+        "local_path": "references/cac-authoring-contract.md",
+        "packaged_sha256": "20b65741191d94886897e2cc0aff930be052b6d136b39d7effe7009517899c26",
+        "adaptations": [
+          "Add a reference heading and a one-sentence description.",
+          "Add a visible provenance notice that names the Maker's generated roles as that application's roles, not a requirement on package consumers.",
+          "Keep the operative rules, the audience rule, and the fidelity check unchanged."
+        ]
+      }
+    ],
+    "supporting_sources": [
+      {
+        "source_path": "docs/SPEC_2.10.1_CAC_v1.md",
+        "source_sha256": "c759e28699aa10790aaac61b06ccd2edddcddfdd6ba77cb8816459800bc67ac9",
+        "packaged": false,
+        "role": "Design basis for scope, placement, and the state distinctions restated in README and NOTICE; not packaged because it describes a Maker release, not the notation."
+      }
+    ],
+    "decision_record": {
+      "session": "20261120_024731_b4b30b",
+      "location": "Hermes state database, messages table, role in ('user','assistant')",
+      "hashed": false,
+      "role": "Owner decisions that the source documents leave implicit: Coder, Codex, and Reviewer never address the customer and write technical English, while only the Planner is bilingual; the human-onboarding exception from Caveman review guidance is dropped and the technical reason kept; byte reductions are offline UTF-8 measurements, not billed tokens."
+    },
+    "adaptations": [
+      "Package the notation as three independent references with visible provenance notices instead of one Maker document set.",
+      "Keep the writing-only scope explicit: no roles, permissions, procedures, approval gates, workflow, or status transitions are defined or changed.",
+      "State that no Maker, TAS package, Caveman installation, network service, or model route is required at use time.",
+      "Carry the audience rule as written: internal agent text in compact technical English, human communication in the recipient's language, with only the human-contact role writing that language.",
+      "Add package checks for frontmatter, reference reachability, packaged checksums, declared adaptations, private paths, and relocation."
+    ],
+    "unverified": [
+      "Token or cost savings from CAC are not established. The Maker migration measured UTF-8 bytes of instruction text offline, not billed tokens, and no live run was compared.",
+      "No claim is made that a text rewritten with this package is compliant with the notation; the checks validate files, not prose quality."
+    ]
+  },
+  "upstream_files": [
+    {
+      "repository": "https://github.com/ataian/generic-devteam",
+      "revision": "953f6dd5b7bf21e96676dccc13ebfcde39e95416",
+      "source_path": "LICENSE",
+      "local_path": "third_party/generic-devteam/LICENSE",
+      "sha256": "dd908f5dab4d4a99a40ce774c5bb6fa0c3997175aa00ebf51f40561dd778d969"
+    }
+  ]
+}
